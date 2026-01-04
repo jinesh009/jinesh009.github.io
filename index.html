@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jinesh Jain | FP&A Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0e1117;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  background: #0e1117;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  border-bottom: 1px solid #1f2937;
+  z-index: 10;
+}
+
+nav a {
+  color: #b8c1cc;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: #7aa2ff;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero h2 {
+  color: #7aa2ff;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero p {
+  color: #b8c1cc;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary {
+  background: #7aa2ff;
+  color: #0e1117;
+}
+
+.secondary {
+  border: 1px solid #7aa2ff;
+  color: #7aa2ff;
+  margin-left: 1rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+section {
+  padding: 5rem 10%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* PROJECTS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #1b2230;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.tag {
+  font-size: 0.75rem;
+  color: #7aa2ff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card h3 {
+  margin: 1rem 0;
+}
+
+.card p {
+  color: #b8c1cc;
+}
+
+.decision {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* THINKING */
+.thinking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.thinking-card {
+  background: #141a24;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  color: #b8c1cc;
+  margin-bottom: 0.6rem;
+}
+
+/* ABOUT */
+.about-text {
+  max-width: 700px;
+  color: #b8c1cc;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>Jinesh Jain</strong>
+  <div>
+    <a href="#projects">Projects</a>
+    <a href="#thinking">How I Think</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>FP&A Analyst in Progress</h1>
+    <h2>Turning Data into Financial Decisions</h2>
+    <p>
+      I build financial models, analyze performance, and translate numbers into
+      management-ready insights.
+    </p>
+    <a href="#projects" class="btn primary">View FP&A Projects</a>
+    <a href="#thinking" class="btn secondary">How I Think</a>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">FP&A Projects</h2>
+  <div class="card-grid">
+    <div class="card">
+      <span class="tag">Capital Budgeting</span>
+      <h3>Capital Investment Scenario Analysis</h3>
+      <p>
+        Evaluated a capital investment using scenario and sensitivity analysis
+        to understand risk and return trade-offs.
+      </p>
+      <p class="decision">Decision: Invest, delay, or reject?</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">Variance Analysis</span>
+      <h3>Budget vs Actual Review</h3>
+      <p>
+        Identified performance gaps between budgeted and actuals and isolated
+        key operational drivers.
+      </p>
+      <p class="decision">Decision: Corrective actions required?</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">Forecasting</span>
+      <h3>Rolling Forecast Model</h3>
+      <p>
+        Built a rolling forecast to update projections based on recent trends.
+      </p>
+      <p class="decision">Decision: Revise quarterly outlook?</p>
+    </div>
+  </div>
+</section>
+
+<section id="thinking">
+  <h2 class="section-title">How I Think as an FP&A Analyst</h2>
+  <div class="thinking-grid">
+    <div class="thinking-card">
+      <h3>Start With the Decision</h3>
+      <p>Every analysis begins with the management question.</p>
+    </div>
+    <div class="thinking-card">
+      <h3>Focus on Drivers</h3>
+      <p>Revenue, cost, and cash move because of drivers.</p>
+    </div>
+    <div class="thinking-card">
+      <h3>Explain Simply</h3>
+      <p>Clear explanations matter more than complex models.</p>
+    </div>
+    <div class="thinking-card">
+      <h3>Balance Speed & Accuracy</h3>
+      <p>Timely insights often beat perfect precision.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Skills & Tools</h2>
+  <div class="skills-grid">
+    <div>
+      <h3>FP&A Skills</h3>
+      <ul>
+        <li>Financial Modeling</li>
+        <li>Budgeting & Forecasting</li>
+        <li>Variance Analysis</li>
+        <li>Scenario & Sensitivity Analysis</li>
+        <li>Management Reporting</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Tools</h3>
+      <ul>
+        <li>Excel (Advanced)</li>
+        <li>PowerPoint</li>
+        <li>GitHub (Portfolio Hosting)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    I am building a career in FP&A with a strong focus on understanding how
+    businesses make financial decisions and translating numbers into insights.
+  </p>
+</section>
+
+<footer>
+  © 2026 Jinesh Jain • FP&A Portfolio
+</footer>
+
+</body>
+</html>
